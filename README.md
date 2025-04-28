@@ -132,3 +132,11 @@ All user inputs will be validated and sanitized to prevent common vulnerabilitie
 
 ### Security Importance
 Implementing strong security practices is essential for protecting user privacy, securing financial transactions, maintaining system reliability, and preserving the overall reputation and trustworthiness of the platform.
+
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying code changes to the production environment. CI/CD ensures that updates are integrated frequently, tested automatically, and deployed quickly and reliably without manual intervention.
+
+Implementing a CI/CD pipeline is crucial for maintaining high software quality, reducing deployment risks, and accelerating the development cycle. It helps detect issues early, enforces coding standards, and ensures that every change passes through automated validation before reaching users.
+
+For this project, tools such as **GitHub Actions** can be used to automate tasks like code testing and deployment workflows. **Docker** can be integrated to ensure consistent environments across development, testing, and production stages.
