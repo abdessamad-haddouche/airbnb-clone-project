@@ -39,3 +39,50 @@ The Quality Assurance (QA) Engineer ensures that the application functions as in
 - **GraphQL**: API query language for efficient client-server interactions.
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **GitHub Actions**: CI/CD tool for automating testing, building, and deployment processes.
+
+## Database Design
+
+The database for the Airbnb Clone Project is structured around several key entities to support core functionalities like user management, property listings, bookings, reviews, and payment processing.
+
+### Users
+- **id**: Unique identifier for each user.
+- **name**: Full name of the user.
+- **email**: Email address used for login and communication.
+- **password_hash**: Securely stored password information.
+- **role**: Indicates whether the user is a host or a guest.
+
+### Properties
+- **id**: Unique identifier for each property.
+- **owner_id**: Foreign key referencing the user (host) who owns the property.
+- **title**: Name or title of the property listing.
+- **description**: Detailed description of the property.
+- **location**: Physical address or geographical location of the property.
+
+### Bookings
+- **id**: Unique identifier for each booking.
+- **property_id**: Foreign key referencing the booked property.
+- **user_id**: Foreign key referencing the guest who made the booking.
+- **start_date**: Check-in date.
+- **end_date**: Check-out date.
+
+### Reviews
+- **id**: Unique identifier for each review.
+- **property_id**: Foreign key referencing the reviewed property.
+- **user_id**: Foreign key referencing the guest who wrote the review.
+- **rating**: Numeric score reflecting the user’s satisfaction.
+- **comment**: Textual feedback left by the user.
+
+### Payments
+- **id**: Unique identifier for each payment transaction.
+- **user_id**: Foreign key referencing the guest who made the payment.
+- **booking_id**: Foreign key referencing the associated booking.
+- **amount**: Total amount paid for the booking.
+- **payment_status**: Indicates whether the payment was successful, pending, or failed.
+
+### Entity Relationships
+- A **User** can own multiple **Properties**.
+- A **User** (guest) can make multiple **Bookings**.
+- Each **Booking** is linked to one **Property** and one **User**.
+- A **User** can leave multiple **Reviews** for different **Properties**.
+- A **Payment** is associated with a **Booking** and the corresponding **User**.
+
