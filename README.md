@@ -110,3 +110,25 @@ The platform implements robust security measures including authentication, autho
 
 ### CI/CD Integration
 Continuous Integration and Continuous Deployment pipelines automate the building, testing, and deployment processes. This ensures faster releases, consistent environments, and minimal downtime.
+
+## API Security
+
+Securing the backend APIs is critical to maintaining the trust, integrity, and functionality of the Airbnb Clone platform. Several key security measures will be implemented:
+
+### Authentication
+Authentication verifies the identity of users accessing the platform. It ensures that only registered users can log in and interact with protected resources.
+
+### Authorization
+Authorization controls what actions authenticated users are allowed to perform. It ensures that users can only access and modify data that they are permitted to interact with, such as restricting hosts from modifying guest bookings or preventing guests from editing property details.
+
+### Rate Limiting
+Rate limiting restricts the number of requests a user or IP address can make to the API within a specified time frame. This measure protects the platform against abuse, such as denial-of-service (DoS) attacks, and helps maintain the availability and reliability of services for legitimate users.
+
+### Data Encryption
+All sensitive data transmitted between clients and the server will be encrypted using HTTPS. Encrypting data in transit ensures that personal information, payment details, and authentication tokens are protected from interception and unauthorized access.
+
+### Input Validation and Sanitization
+All user inputs will be validated and sanitized to prevent common vulnerabilities such as SQL Injection, Cross-Site Scripting (XSS), and other code injection attacks.
+
+### Security Importance
+Implementing strong security practices is essential for protecting user privacy, securing financial transactions, maintaining system reliability, and preserving the overall reputation and trustworthiness of the platform.
