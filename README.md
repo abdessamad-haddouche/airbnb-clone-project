@@ -11,13 +11,6 @@ It involves building the backend systems, designing a relational database, devel
 - Implement secure APIs following industry standards.
 - Simulate real-world team collaboration and documentation practices.
 
-## Technology Stack
-- **Django**: Web framework for backend development and API management.
-- **MySQL**: Relational database system for managing structured application data.
-- **GraphQL**: API query language for efficient client-server interactions.
-- **Docker**: Containerization tool for consistent development and deployment environments.
-- **GitHub Actions**: CI/CD tool for automating testing, building, and deployment processes.
-
 ## Team Roles
 
 Effective execution of the Airbnb Clone Project involves collaboration across several key roles.
@@ -39,3 +32,10 @@ The Project Manager coordinates all aspects of the project development lifecycle
 
 ### QA Engineer
 The Quality Assurance (QA) Engineer ensures that the application functions as intended. They create and execute test plans, perform manual and automated testing, report bugs, and validate that all features meet the specified requirements before release.
+
+## Technology Stack
+- **Django**: Web framework for backend development and API management.
+- **MySQL**: Relational database system for managing structured application data.
+- **GraphQL**: API query language for efficient client-server interactions.
+- **Docker**: Containerization tool for consistent development and deployment environments.
+- **GitHub Actions**: CI/CD tool for automating testing, building, and deployment processes.
